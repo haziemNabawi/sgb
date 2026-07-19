@@ -115,7 +115,7 @@ function renderSegment(key){
   animateActiveBar();
 }
 
-/* ---------- Sub-segmen (mis. Brightening ⇄ Flek Hitam) ---------- */
+/* ---------- Sub-segmen (mis. Brightening ⇄ Dark Spot) ---------- */
 function getSubKeys(){
   const raw = document.body.dataset.sub;
   return raw ? raw.split(",").map(s=>s.trim()) : null;

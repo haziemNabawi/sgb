@@ -165,54 +165,54 @@ const SGB_DATA = {
   },
 
 
-  /* ─────────────────────── FLEK HITAM (sub-segmen Brightening) ─────────────────────── */
-  "flek-hitam": {
-    nama: "Flek Hitam Solution",
+  /* ─────────────────────── DARK SPOT (sub-segmen Brightening) ─────────────────────── */
+  "dark-spot": {
+    nama: "Dark Spot Solution",
     emoji: "🤍",
-    deskripsi: "Untuk menyamarkan noda hitam & flek yang mulai terlihat",
+    deskripsi: "Untuk menyamarkan dark spot (noda hitam) yang mulai terlihat",
     tema: { utama: "#6f7a84", tua: "#454e57", muda: "#f4f6f8", border: "#dde2e6", aksen: "#98a3ac" },
     tiers: [
       {
         id: "basic", nama: "Basic", icon: "🌱", range: "± Rp170 ribuan", budgetMaks: 200000,
-        judul: "Flek Hitam Basic",
+        judul: "Dark Spot Basic",
         catatan: "Untuk yang baru mulai mengatasi kulit kusam & noda hitam ringan.",
-        fotoPaket: "img/flek-hitam/paket-basic.jpg",
+        fotoPaket: "img/dark-spot/paket-basic.jpg",
         produk: [
-          { nama: "Crystal Face Wash", peran: "Cleanser — membersihkan & membantu mencerahkan", harga: 41000, foto: "img/flek-hitam/face-wash.jpg", ikon: "🧴" },
-          { nama: "Crystal Day Cream 15gr", peran: "Day Cream — merawat & menyamarkan noda di siang hari", harga: 57000, foto: "img/flek-hitam/day-cream-15.jpg", ikon: "🫧" },
-          { nama: "Tone Up Sunscreen SPF 50", peran: "Sunscreen — proteksi UV + efek tone up seketika", harga: 77000, foto: "img/flek-hitam/sunscreen-toneup.jpg", ikon: "☀️" }
+          { nama: "Crystal Face Wash", peran: "Cleanser — membersihkan & membantu mencerahkan", harga: 41000, foto: "img/dark-spot/face-wash.jpg", ikon: "🧴" },
+          { nama: "Crystal Day Cream 15gr", peran: "Day Cream — merawat & menyamarkan noda di siang hari", harga: 57000, foto: "img/dark-spot/day-cream-15.jpg", ikon: "🫧" },
+          { nama: "Tone Up Sunscreen SPF 50", peran: "Sunscreen — proteksi UV + efek tone up seketika", harga: 77000, foto: "img/dark-spot/sunscreen-toneup.jpg", ikon: "☀️" }
         ]
       },
       {
         id: "treatment", nama: "Treatment", icon: "✨", range: "± Rp300 ribuan", budgetMaks: 320000,
-        judul: "Flek Hitam Treatment",
-        catatan: "Untuk flek yang mulai terlihat — fokus menyamarkan noda dengan serum.",
-        fotoPaket: "img/flek-hitam/paket-treatment.jpg",
+        judul: "Dark Spot Treatment",
+        catatan: "Untuk dark spot yang mulai terlihat — fokus menyamarkan noda dengan serum.",
+        fotoPaket: "img/dark-spot/paket-treatment.jpg",
         produk: [
-          { nama: "Crystal Face Wash", peran: "Cleanser — membersihkan & membantu mencerahkan", harga: 41000, foto: "img/flek-hitam/face-wash.jpg", ikon: "🧴" },
-          { nama: "Crystal Serum", peran: "Serum — menyamarkan flek hitam & meratakan warna kulit", harga: 104000, foto: "img/flek-hitam/serum.jpg", ikon: "✨" },
-          { nama: "Crystal Day Cream 15gr", peran: "Day Cream — merawat & menyamarkan noda di siang hari", harga: 57000, foto: "img/flek-hitam/day-cream-15.jpg", ikon: "🫧" },
-          { nama: "Tone Up Sunscreen SPF 50", peran: "Sunscreen — proteksi UV + efek tone up seketika", harga: 77000, foto: "img/flek-hitam/sunscreen-toneup.jpg", ikon: "☀️" }
+          { nama: "Crystal Face Wash", peran: "Cleanser — membersihkan & membantu mencerahkan", harga: 41000, foto: "img/dark-spot/face-wash.jpg", ikon: "🧴" },
+          { nama: "Crystal Serum", peran: "Serum — menyamarkan dark spot & meratakan warna kulit", harga: 104000, foto: "img/dark-spot/serum.jpg", ikon: "✨" },
+          { nama: "Crystal Day Cream 15gr", peran: "Day Cream — merawat & menyamarkan noda di siang hari", harga: 57000, foto: "img/dark-spot/day-cream-15.jpg", ikon: "🫧" },
+          { nama: "Tone Up Sunscreen SPF 50", peran: "Sunscreen — proteksi UV + efek tone up seketika", harga: 77000, foto: "img/dark-spot/sunscreen-toneup.jpg", ikon: "☀️" }
         ]
       },
       {
         id: "complete", nama: "Complete", icon: "💎", range: "± Rp400 ribuan", budgetMaks: 480000,
-        judul: "Flek Hitam Complete",
+        judul: "Dark Spot Complete",
         catatan: "Rutinitas pagi & malam dengan treatment lebih lengkap — day & night cream besar plus tinted sunscreen.",
-        fotoPaket: "img/flek-hitam/paket-complete.jpg",
+        fotoPaket: "img/dark-spot/paket-complete.jpg",
         produk: [
-          { nama: "Crystal Face Wash", peran: "Cleanser — membersihkan & membantu mencerahkan", harga: 41000, foto: "img/flek-hitam/face-wash.jpg", ikon: "🧴" },
-          { nama: "Crystal Serum", peran: "Serum — menyamarkan flek hitam & meratakan warna kulit", harga: 104000, foto: "img/flek-hitam/serum.jpg", ikon: "✨" },
-          { nama: "Crystal Day Cream 30gr", peran: "Day Cream — perawatan siang, ukuran besar lebih hemat", harga: 111000, foto: "img/flek-hitam/day-cream-30.jpg", ikon: "🫧" },
-          { nama: "Crystal Night Cream 30gr", peran: "Night Cream — bekerja menyamarkan noda saat tidur", harga: 111000, foto: "img/flek-hitam/night-cream-30.jpg", ikon: "🌙" },
-          { nama: "Tinted Sunscreen", peran: "Sunscreen — proteksi UV dengan hasil akhir natural coverage", harga: 79000, foto: "img/flek-hitam/sunscreen-tinted.jpg", ikon: "☀️" }
+          { nama: "Crystal Face Wash", peran: "Cleanser — membersihkan & membantu mencerahkan", harga: 41000, foto: "img/dark-spot/face-wash.jpg", ikon: "🧴" },
+          { nama: "Crystal Serum", peran: "Serum — menyamarkan dark spot & meratakan warna kulit", harga: 104000, foto: "img/dark-spot/serum.jpg", ikon: "✨" },
+          { nama: "Crystal Day Cream 30gr", peran: "Day Cream — perawatan siang, ukuran besar lebih hemat", harga: 111000, foto: "img/dark-spot/day-cream-30.jpg", ikon: "🫧" },
+          { nama: "Crystal Night Cream 30gr", peran: "Night Cream — bekerja menyamarkan noda saat tidur", harga: 111000, foto: "img/dark-spot/night-cream-30.jpg", ikon: "🌙" },
+          { nama: "Tinted Sunscreen", peran: "Sunscreen — proteksi UV dengan hasil akhir natural coverage", harga: 79000, foto: "img/dark-spot/sunscreen-tinted.jpg", ikon: "☀️" }
         ]
       }
     ],
     tips: [
-      { ikon: "☀️", judul: "Sunscreen = kunci utama", isi: "Flek hitam makin gelap jika terpapar UV tanpa proteksi. Re-apply tiap 3–4 jam." },
+      { ikon: "☀️", judul: "Sunscreen = kunci utama", isi: "Dark spot makin gelap jika terpapar UV tanpa proteksi. Re-apply tiap 3–4 jam." },
       { ikon: "🧤", judul: "Jangan digosok", isi: "Menggosok atau scrub berlebihan justru memicu hiperpigmentasi baru." },
-      { ikon: "⏳", judul: "Butuh waktu", isi: "Menyamarkan flek butuh 8–12 minggu pemakaian konsisten — jangan menyerah di tengah jalan." },
+      { ikon: "⏳", judul: "Butuh waktu", isi: "Menyamarkan dark spot butuh 8–12 minggu pemakaian konsisten — jangan menyerah di tengah jalan." },
       { ikon: "🌙", judul: "Maksimalkan malam hari", isi: "Gunakan night cream rutin — regenerasi sel kulit paling aktif saat tidur." }
     ]
   },
