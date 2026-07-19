@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Glow Budget — Putar Wheel & Temukan Solusi Kulitmu</title>
+<meta name="description" content="Pilih skin problem kamu, putar wheel, dan temukan paket skincare Wardah sesuai budget. Promo paket 10%!">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="landing">
+  <h1>Smart Glow <em style="font-style:normal;color:#d4567c">Budget</em></h1>
+  <p class="sub">Smart Choice, Right Solution, Affordable Glow ✦<br>Ketuk segmen sesuai masalah kulitmu, atau tekan <strong>PUTAR</strong> untuk kejutan — promo paket 10% menanti! 🎉</p>
+
+  <div class="wheel-box">
+    <svg viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="170" cy="170" r="168" fill="#ffffff"/>
+      <g class="wheel-rot" id="wheelRot">
+        <g transform="translate(170,170)">
+          <path class="seg" data-href="acne.html" d="M0,0 L0,-158 A158,158 0 0 1 158,0 Z" fill="#bfe8d2"/>
+          <path class="seg" data-href="anti-aging.html" d="M0,0 L158,0 A158,158 0 0 1 0,158 Z" fill="#f3ddb0"/>
+          <path class="seg" data-href="barrier.html" d="M0,0 L0,158 A158,158 0 0 1 -158,0 Z" fill="#bde2f0"/>
+          <path class="seg" data-href="brightening.html" d="M0,0 L-158,0 A158,158 0 0 1 0,-158 Z" fill="#f6c9d4"/>
+        </g>
+        <g font-family="Quicksand,sans-serif" font-weight="700" text-anchor="middle" pointer-events="none">
+          <text x="245" y="92" font-size="16" fill="#1f7a6d">ACNE</text>
+          <text x="245" y="110" font-size="11" fill="#1f7a6d">kulit berjerawat</text>
+          <text x="245" y="252" font-size="15" fill="#b07c2e">ANTI AGING</text>
+          <text x="245" y="270" font-size="11" fill="#b07c2e">garis halus</text>
+          <text x="95" y="252" font-size="15" fill="#3d78ad">BARRIER</text>
+          <text x="95" y="270" font-size="11" fill="#3d78ad">kering &amp; dehidrasi</text>
+          <text x="95" y="92" font-size="14" fill="#c2456f">BRIGHTENING</text>
+          <text x="95" y="110" font-size="11" fill="#c2456f">kusam &amp; flek hitam</text>
+        </g>
+      </g>
+      <path d="M155,6 h30 l-15,32 Z" fill="#22403a" stroke="#ffffff" stroke-width="4"/>
+    </svg>
+    <button class="spin-btn" id="spinBtn">PUTAR<br>WHEEL</button>
+  </div>
+
+  <p class="hint">💡 Setiap segmen punya paket <strong>Basic → Complete</strong> yang bisa disesuaikan budget</p>
+
+  <div class="seg-links">
+    <a class="seg-link" style="background:#1f7a6d" href="acne.html">🌿 Acne</a>
+    <a class="seg-link" style="background:#b07c2e" href="anti-aging.html">🌟 Anti Aging</a>
+    <a class="seg-link" style="background:#6d4a9e" href="barrier.html">💜 Flek Hitam</a>
+    <a class="seg-link" style="background:#d4567c" href="brightening.html">🌸 Brightening &amp; Flek</a>
+  </div>
+</div>
+
+<script>
+const segs = [
+  {href:"acne.html",       mid:45},   /* sudut tengah segmen (searah jarum jam dari atas) */
+  {href:"anti-aging.html", mid:135},
+  {href:"barrier.html", mid:225},
+  {href:"brightening.html",mid:315}
+];
+document.querySelectorAll(".seg").forEach(s=>{
+  s.addEventListener("click", ()=>{ window.location.href = s.dataset.href; });
+});
+let spinning = false;
+document.getElementById("spinBtn").addEventListener("click", ()=>{
+  if(spinning) return;
+  spinning = true;
+  const pick = segs[Math.floor(Math.random()*segs.length)];
+  /* pointer di atas (0°). Putar sehingga tengah segmen terpilih berada di atas */
+  const target = 360*5 + (360 - pick.mid);
+  const rot = document.getElementById("wheelRot");
+  rot.style.transform = `rotate(${target}deg)`;
+  setTimeout(()=>{ window.location.href = pick.href; }, 4300);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barrier & Hydration — Smart Glow Budget</title>
+<meta name="description" content="Rekomendasi paket skincare Wardah sesuai budget kamu — promo paket 10%.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-segment="barrier">
+
+<header>
+  <div class="header-inner">
+    <a class="brand" href="index.html">Smart Glow Budget<small>Skin Solution Series</small></a>
+    <span class="header-tag"><span data-seg-emoji></span> <span data-seg-nama></span></span>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">Layer 1 · Skin Problem</span>
+    <h1><span data-seg-nama></span></h1>
+    <p class="lead"><span data-seg-desc></span>. Temukan paket skincare yang pas dengan kondisi kulit <strong>dan budget kamu</strong>.</p>
+    <a href="#paket" class="hero-cta">Lihat Paket Rekomendasi ↓</a>
+    <span class="promo-banner">🎉 Promo Paket <span data-promo-pct></span> OFF</span>
+    <div class="hero-facts">
+      <span class="fact">✓ Teruji dermatologis</span>
+      <span class="fact">✓ Non-comedogenic</span>
+      <span class="fact">✓ Halal & aman</span>
+    </div>
+  </div>
+</div>
+
+<section class="tiers" id="paket">
+  <div class="wrap">
+    <p class="sec-eyebrow">Paket Rekomendasi</p>
+    <h2 class="sec-title">Pilih sesuai budget kamu</h2>
+    <p class="sec-desc">Ketuk salah satu paket di bawah — semua produk disusun sesuai urutan pemakaian. Beli 1 paket lengkap dan dapatkan diskon <strong data-promo-pct></strong>! Ketuk foto produk untuk melihat lebih besar.</p>
+    <div class="tier-tabs" id="tier-tabs" role="tablist" aria-label="Pilihan paket"></div>
+    <div id="tier-panels"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="sec-eyebrow">Cara Pakai</p>
+    <h2 class="sec-title">Urutan pemakaian pagi & malam</h2>
+    <p class="sec-desc">Konsistensi lebih penting daripada banyaknya produk. Ikuti urutan ini setiap hari untuk hasil terbaik.</p>
+    <div class="routine-grid">
+      <div class="routine-card">
+        <h3>🌅 Rutinitas Pagi</h3>
+        <ol>
+          <li><span><strong>Face Wash</strong><small>Cuci muka dengan air suam-suam kuku, pijat lembut 30–60 detik.</small></span></li>
+          <li><span><strong>Toner</strong><small>Tuang ke telapak tangan atau kapas, tepuk perlahan ke wajah.</small></span></li>
+          <li><span><strong>Serum</strong><small>2–3 tetes, fokus di area yang bermasalah. Tunggu meresap.</small></span></li>
+          <li><span><strong>Day Cream / Moisturizer</strong><small>Tipis merata untuk mengunci kelembapan.</small></span></li>
+          <li><span><strong>Sunscreen</strong><small>Wajib! 2 ruas jari, re-apply tiap 3–4 jam jika beraktivitas di luar.</small></span></li>
+        </ol>
+      </div>
+      <div class="routine-card">
+        <h3>🌙 Rutinitas Malam</h3>
+        <ol>
+          <li><span><strong>Face Wash</strong><small>Bersihkan sisa sunscreen, makeup, dan kotoran seharian.</small></span></li>
+          <li><span><strong>Toner</strong><small>Menyiapkan kulit agar serum menyerap lebih baik.</small></span></li>
+          <li><span><strong>Serum</strong><small>Malam adalah waktu terbaik kulit beregenerasi — jangan skip.</small></span></li>
+          <li><span><strong>Night Cream / Moisturizer</strong><small>Bantu perbaikan kulit saat tidur.</small></span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="wrap">
+    <p class="sec-eyebrow">Tips</p>
+    <h2 class="sec-title">Biar hasilnya maksimal ✨</h2>
+    <div class="tips-grid" id="tips-grid"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="f-tag">Smart Choice, Right Solution, Affordable Glow ✦</div>
+  <p><a href="index.html">← Kembali ke Smart Glow Wheel</a> · scan QR di store untuk segmen lainnya.</p>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <div class="lb-card">
+    <div class="lb-img"></div>
+    <div class="lb-body">
+      <h4 class="lb-title"></h4>
+      <p class="lb-sub"></p>
+      <div class="lb-price"></div>
+      <button class="lb-close">Tutup</button>
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
