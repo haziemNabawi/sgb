@@ -15,7 +15,7 @@ const SGB_DATA = {
     nama: "Acne Solution",
     emoji: "🌿",
     deskripsi: "Untuk kulit berjerawat dan mudah berjerawat",
-    tema: { utama: "#1f7a6d", tua: "#12564e", muda: "#e7f4ec", border: "#d3ebdd", aksen: "#2a9d8f" },
+    tema: { utama: "#0e8f8a", tua: "#085e5b", muda: "#e3f4f3", border: "#c6e7e5", aksen: "#14b3ac" },
     tiers: [
       {
         id: "starter", nama: "Starter", icon: "🌱", range: "< Rp100.000", budgetMaks: 100000,
@@ -66,7 +66,7 @@ const SGB_DATA = {
     nama: "Anti Aging Solution",
     emoji: "🌟",
     deskripsi: "Untuk garis halus, kulit kurang kenyal & mulai kehilangan kelembapan",
-    tema: { utama: "#b07c2e", tua: "#7a5115", muda: "#faf3e3", border: "#efdfc0", aksen: "#d19a3f" },
+    tema: { utama: "#8b7ec9", tua: "#5d519b", muda: "#f2f0fa", border: "#ddd8f0", aksen: "#a89ddb" },
     tiers: [
       {
         id: "basic", nama: "Basic", icon: "🌱", range: "± Rp160 ribuan", budgetMaks: 200000,
@@ -118,7 +118,7 @@ const SGB_DATA = {
     nama: "Barrier & Hydration",
     emoji: "💧",
     deskripsi: "Untuk kulit kering, dehidrasi & skin barrier (lapisan pelindung kulit) yang perlu diperkuat",
-    tema: { utama: "#3d78ad", tua: "#24557f", muda: "#e7f2fa", border: "#cfe4f2", aksen: "#5b9bd0" },
+    tema: { utama: "#cf7d90", tua: "#a05468", muda: "#fdf0f2", border: "#f5d8dd", aksen: "#e6a4b1" },
     tiers: [
       {
         id: "starter", nama: "Starter", icon: "🌱", range: "± Rp150 ribuan", budgetMaks: 180000,
@@ -168,9 +168,9 @@ const SGB_DATA = {
   /* ─────────────────────── FLEK HITAM (sub-segmen Brightening) ─────────────────────── */
   "flek-hitam": {
     nama: "Flek Hitam Solution",
-    emoji: "💜",
+    emoji: "🤍",
     deskripsi: "Untuk menyamarkan noda hitam & flek yang mulai terlihat",
-    tema: { utama: "#6d4a9e", tua: "#472d6e", muda: "#f1eaf9", border: "#e0d2f0", aksen: "#9b6fd0" },
+    tema: { utama: "#6f7a84", tua: "#454e57", muda: "#f4f6f8", border: "#dde2e6", aksen: "#98a3ac" },
     tiers: [
       {
         id: "basic", nama: "Basic", icon: "🌱", range: "± Rp170 ribuan", budgetMaks: 200000,
@@ -222,7 +222,7 @@ const SGB_DATA = {
     nama: "Brightening Solution",
     emoji: "🌸",
     deskripsi: "Untuk kulit kusam & warna kulit tidak merata",
-    tema: { utama: "#d4567c", tua: "#a13458", muda: "#fdeef4", border: "#f7d3e0", aksen: "#ec7ea1" },
+    tema: { utama: "#5b8ec9", tua: "#37628f", muda: "#edf4fb", border: "#d3e3f4", aksen: "#7fa9d9" },
     tiers: [
       {
         id: "starter", nama: "Starter", icon: "🌱", range: "± Rp110 ribuan", budgetMaks: 150000,
