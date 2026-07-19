@@ -6,7 +6,7 @@
 3. 🌟 Anti Aging         → /anti-aging
 4. 🌸 Brightening        → /brightening
    └─ berisi 2 pilihan (popup saat dibuka):
-      ✨ Mencerahkan (Light+)  &  💜 Flek Hitam (Crystal)
+      ✨ Mencerahkan (Light+)  &  🤍 Dark Spot (Crystal)
 
 ## File
 - index.html   → landing (wheel interaktif)
@@ -40,7 +40,7 @@ img/brightening/   ← paket Light+ (pilihan "Mencerahkan")
   sunscreen-brightc.jpg, sunscreen-toneup.jpg,
   paket-starter.jpg, paket-care.jpg, paket-complete.jpg
 
-img/flek-hitam/    ← paket Crystal (pilihan "Flek Hitam")
+img/dark-spot/     ← paket Crystal (pilihan "Dark Spot")
   face-wash.jpg, serum.jpg, day-cream-15.jpg, day-cream-30.jpg,
   night-cream-30.jpg, sunscreen-toneup.jpg, sunscreen-tinted.jpg,
   paket-basic.jpg, paket-treatment.jpg, paket-complete.jpg
