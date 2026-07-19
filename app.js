@@ -90,7 +90,6 @@ function renderSegment(key){
         <div>
           <h3>${tier.icon} ${tier.judul}</h3>
           <p class="p-note">${tier.catatan}</p>
-          <button class="paket-foto-btn" data-foto="${tier.fotoPaket}" data-judul="Paket ${tier.nama} — ${seg.nama}" data-sub="${tier.judul}" data-harga="${rupiah(totalPromo)} (harga promo paket)" data-ikon="🎁">📸 Lihat Foto Paket</button>
         </div>
         <div class="promo-box">
           <div class="promo-row normal"><span class="lbl">💰 Total Normal</span><span class="val">${rupiah(totalNormal)}</span></div>
@@ -205,9 +204,18 @@ function activateTier(id){
 
 function animateActiveBar(){
   const fill = document.querySelector(".tier-panel.active .budget-fill");
-  if(!fill) return;
-  fill.style.width = "0";
-  requestAnimationFrame(()=>requestAnimationFrame(()=>{ fill.style.width = fill.dataset.fill + "%"; }));
+  if(fill){
+    fill.style.width = "0";
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{ fill.style.width = fill.dataset.fill + "%"; }));
+  }
+  /* animasi pop kartu produk, berurutan */
+  const cards = document.querySelectorAll(".tier-panel.active .product");
+  cards.forEach((c,i)=>{
+    c.classList.remove("pop");
+    void c.offsetWidth;                 /* reset animasi */
+    c.style.animationDelay = (i*80) + "ms";
+    c.classList.add("pop");
+  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
